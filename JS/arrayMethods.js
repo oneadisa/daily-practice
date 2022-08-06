@@ -48,3 +48,25 @@ greetAliens(aliens);
 
 // <-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
+// Write your code here:
+
+const convertToBaby = (arr) => {
+    let babyAnimals = [];
+    for (let i = 0; i < arr.length; i++) {
+        babyAnimals.push(`baby ${arr[i]}`);
+    }
+    return babyAnimals;
+};
+
+function convertToBabyMap (arr) {
+    return arr.map((animal) =>
+        `baby ${animal}`
+    )
+}
+
+// When you're ready to test your code, uncomment the below and run:
+
+const animals = ['panda', 'turtle', 'giraffe', 'hippo', 'sloth', 'human'];
+
+console.log(convertToBabyMap(animals))
+// Should return ['baby panda', 'baby turtle', 'baby giraffe', 'baby hippo', 'baby sloth', 'baby human'];
