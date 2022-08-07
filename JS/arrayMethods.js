@@ -177,7 +177,7 @@ function sort (a, b) {
     return b - a;
 }
 
-const sortYears = (arr, dort) => arr.sort(sort);
+const sortYears = (arr, sort) => arr.sort(sort);
 
 // Feel free to uncomment the below code to test your function:
 
@@ -185,3 +185,120 @@ const years = [1970, 1999, 1951, 1982, 1963, 2011, 2018, 1922];
 
 console.log(sortYears(years));
 // Should print [ 2018, 2011, 1999, 1982, 1970, 1963, 1951, 1922 ]
+
+
+// <-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+// Write your code here:
+
+const justCoolStuff = (arr1, arr2) => arr1.filter((item) => arr2.includes(item));
+
+// Feel free to uncomment the code below to test your function
+
+const coolStuff = ['gameboys', 'skateboards', 'backwards hats', 'fruit-by-the-foot', 'pogs', 'my room', 'temporary tattoos'];
+
+const myStuff = ['rules', 'fruit-by-the-foot', 'wedgies', 'sweaters', 'skateboards', 'family-night', 'my room', 'braces', 'the information superhighway'];
+
+console.log(justCoolStuff(myStuff, coolStuff))
+// Should print [ 'fruit-by-the-foot', 'skateboards', 'my room' ]
+
+// <-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+// Write your code here:
+
+const isTheDinnerVegan = (arr) => arr.every((item) => item.source === "plant");
+
+
+const dinner = [{ name: 'hamburger', source: 'meat' }, { name: 'cheese', source: 'dairy' }, { name: 'ketchup', source: 'plant' }, { name: 'bun', source: 'plant' }, { name: 'dessert twinkies', source: 'unknown' }];
+
+console.log(isTheDinnerVegan(dinner))
+// Should print false
+
+
+
+// <-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+const speciesArray = [
+    { speciesName: "shark", numTeeth: 50 },
+    { speciesName: "dog", numTeeth: 42 },
+    { speciesName: "alligator", numTeeth: 80 },
+    { speciesName: "human", numTeeth: 32 },
+];
+
+// Write your code here:
+
+function sort (a, b) {
+    return a.numTeeth > b.numTeeth;
+}
+
+// const sortSpeciesByTeeth = (arr, sort) => 
+// arr.sort((a, b) { return a.numTeeth > b.numTeeth
+// });
+
+const sortSpeciesByTeeth = (arr, sort) => arr.sort((speciesObj1, speciesObj2) => speciesObj1.numTeeth > speciesObj2.numTeeth)
+
+// Feel free to comment out the code below when you're ready to test your function!
+
+console.log(sortSpeciesByTeeth(speciesArray));
+
+// Should print:
+// [ { speciesName: 'human', numTeeth: 32 },
+//   { speciesName: 'dog', numTeeth: 42 },
+//   { speciesName: 'shark', numTeeth: 50 },
+//   { speciesName: 'alligator', numTeeth: 80 } ]
+
+
+// <-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+// Write your code here:
+
+
+
+const findMyKeys = arr =>
+    arr.findIndex(item => item === 'keys')
+
+    
+
+const randomStuff = ['credit card', 'screwdriver', 'receipt', 'gum', 'keys', 'used gum', 'plastic spoon'];
+
+console.log(findMyKeys(randomStuff))
+// Should print 4
+
+
+// <-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+const dogFactory = (name, breed, weight) => {
+    return {
+        _name: name,
+        _breed: breed,
+        _weight: weight,
+        get name () {
+            return this._name;
+        },
+        set name (newName) {
+            this._name = newName;
+        },
+        get breed () {
+            return this._breed;
+        },
+        set breed (newBreed) {
+            this._breed = newBreed;
+        },
+        get weight () {
+            return this._weight;
+        },
+        set weight (newWeight) {
+            this._weight = newWeight;
+        },
+        bark () {
+            return 'ruff! ruff!'
+        },
+        eatTooManyTreats () {
+            this._weight++
+        }
+    }
+}
+
+// <-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+// <-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
