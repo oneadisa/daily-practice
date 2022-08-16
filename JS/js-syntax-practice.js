@@ -70,6 +70,7 @@ subLength('digitize', 'i'); // returns 0
 subLength('cheesecake', 'k'); // returns 0
 
 
+
 // Write function below
 const subLength = (str, char) => {
     let charCount = 0;

@@ -240,6 +240,8 @@ const sortSpeciesByTeeth = (arr, sort) => arr.sort((speciesObj1, speciesObj2) =>
 
 console.log(sortSpeciesByTeeth(speciesArray));
 
+
+
 // Should print:
 // [ { speciesName: 'human', numTeeth: 32 },
 //   { speciesName: 'dog', numTeeth: 42 },
