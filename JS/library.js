@@ -7,6 +7,7 @@ class Media {
 
   get title() {
     return this._title;
+    
   }
 
   get isCheckedOut() {
