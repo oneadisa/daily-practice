@@ -1,0 +1,21 @@
+{
+  "name": "prettier",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "2.8.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "extends": ["prettier"],
+  "parser": "babel-eslint",
+  "rules": {
+    // indent: "error message"
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}
+
+// npx eslint-config-prettier script.js
+// npm i --save-dev eslint-config-prettier
