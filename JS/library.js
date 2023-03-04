@@ -5,6 +5,7 @@ class Media {
     this._ratings = [];
   }
 
+  
   get title() {
     return this._title;
     
@@ -12,7 +13,7 @@ class Media {
 
   get isCheckedOut() {
     return this._isCheckedOut;
-  }
+  } 
 
   get ratings() {
     return this._ratings;
